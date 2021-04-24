@@ -56,11 +56,11 @@
 - Now course Part
 - Matrices
 - Building Matrices:matrix() , rbind() , cbind()
-- Colnnames() and Colnames()
-- MAtrx Operation
+- Colnnames() and Rownames()
+- Matrix Operation
 - Visualization with matplot***
 - Subsetting
-- Creat your First Function
+- Create your First Function
 - Plot in Function
 - Deriving insights
 
@@ -79,7 +79,7 @@
 - Visualizing with qplot : part1
 - Building Dataframe: data.frame()
 - Merging Data Frames : merge()
-- Visualiza\ing with qplot:part2
+- Visualizing with qplot:part2
 
 ### 11. Advanced Data visualization with ggplot2.
 
