@@ -4,7 +4,7 @@
 
 
 # Resources 
----
+
 - [R Programing A-to-Z](https://www.udemy.com/course/r-programming/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879424134_._ad_437497333830_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9069452_._pd__._&matchtype=b&gclid=CjwKCAjwg4-EBhBwEiwAzYAlsl9itElo4PTxWkhHZq0nDYCeMyGbG-CcGz4dJH7Am8B35Uj4SNr45hoCdeUQAvD_BwE)
 - [SuperDataScience](https://www.superdatascience.com/pages/rcourse)
 - [DataCamp](https://www.datacamp.com/courses/free-introduction-to-r?utm_source=adwords_ppc&utm_campaignid=12492439802&utm_adgroupid=122563402521&utm_device=c&utm_keyword=coursera%20r&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=504191094653&utm_targetid=kwd-510246930934&utm_loc_interest_ms=&utm_loc_physical_ms=9069452&gclid=CjwKCAjwg4-EBhBwEiwAzYAlskwQGA1HhtzUo6Gs6CqzAgfYT4X_H1jqFj0jU5dmwDc-3cdo5ZXuNhoC0eEQAvD_BwE)
@@ -17,7 +17,7 @@
 
 
 ## Contents
----
+
 #### 1.Basic
 ---
 - Hello(actually follow the tradition)
