@@ -16,10 +16,11 @@
 - [Sape](http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
 
 
-## Contents
+
+# Contents
 
 #### 1.Basic
----
+
 - Hello(actually follow the tradition)
 - Help Function
 - Data Types
@@ -29,15 +30,12 @@
 - Law of Large Number
 
 #### 2.Conditional Statement
----
 #### 3.Loops(for,while,next,repeat)
----
 #### 4.Function
----
 #### 5.String
----
+
 #### 6.Vector(Fundamental Of R)
----
+
 - What is Vector
 - Created some Vectors: c(),seq(),rep(), :
 - Check Types :is.numeric........
@@ -47,11 +45,11 @@
 - Packages
 
 #### 7.List
----
+
 #### 8.Factor
----
+
 #### 9.Matrices and matplot
----
+
 - Create and Name Matrices
 - Subsetting or access element
 - Matrices Arithmatic
@@ -69,7 +67,7 @@
 
 
 #### 10.Dataframe and qplot
----
+
 - Dataframe basic to all
 - Course part
 - Ways of importing data
@@ -84,7 +82,7 @@
 - Visualiza\ing with qplot:part2
 
 ### 11.Advanced Data visualization with ggplot2.
----
+
 
 - Grammer of Graphics
 - Factors in R
