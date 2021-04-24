@@ -19,7 +19,7 @@
 
 # Contents
 
-#### 1.Basic
+#### 1. Basic
 
 - Hello(actually follow the tradition)
 - Help Function
@@ -29,12 +29,12 @@
 - Logical Variables.......
 - Law of Large Number
 
-#### 2.Conditional Statement
-#### 3.Loops(for,while,next,repeat)
-#### 4.Function
-#### 5.String
+#### 2. Conditional Statement
+#### 3. Loops(for,while,next,repeat)
+#### 4. Function
+#### 5. String
 
-#### 6.Vector(Fundamental Of R)
+#### 6. Vector(Fundamental Of R)
 
 - What is Vector
 - Created some Vectors: c(),seq(),rep(), :
@@ -44,11 +44,11 @@
 - Power of vectorized Operation
 - Packages
 
-#### 7.List
+#### 7. List
 
-#### 8.Factor
+#### 8. Factor
 
-#### 9.Matrices and matplot
+#### 9. Matrices and matplot
 
 - Create and Name Matrices
 - Subsetting or access element
@@ -66,7 +66,7 @@
 
 
 
-#### 10.Dataframe and qplot
+#### 10. Dataframe and qplot
 
 - Dataframe basic to all
 - Course part
@@ -81,7 +81,7 @@
 - Merging Data Frames : merge()
 - Visualiza\ing with qplot:part2
 
-### 11.Advanced Data visualization with ggplot2.
+### 11. Advanced Data visualization with ggplot2.
 
 
 - Grammer of Graphics
