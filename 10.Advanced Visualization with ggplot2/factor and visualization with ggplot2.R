@@ -101,6 +101,7 @@ q + geom_point()
 #----------------------Overriding Aesthetic
 
 #exmple1
+
 q + geom_point(aes(size=CriticRatings))
 q + geom_point(aes(size=I(2)))
 
@@ -213,11 +214,14 @@ u + geom_point() + geom_smooth( fill = NA)
 u <- ggplot(data = movies , aes(x = Genre , 
                                 y = Audianceratings ,
                                 colour =Genre))
+
 u + geom_boxplot()
 u + geom_boxplot() + geom_point()
 u + geom_boxplot(size = 1.2) + geom_point()
+
 # tip or hack
 u + geom_boxplot(size = 1.2) + geom_jitter()
+
 #another way
 u + geom_jitter() + geom_boxplot(size = 1.2 , alpha = 0.5) 
 
@@ -226,11 +230,11 @@ u + geom_jitter() + geom_boxplot(size = 1.2 , alpha = 0.5)
 v <- ggplot(data = movies ,aes(x = BudgetRatings))
 v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")
 
+
 # facets
 ?facet_grid()
 v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")+
-                    facet_grid(Genre~. ,scales = "free")
-
+                    facet_grid(Genre~. ,scales = "free") # xxx~. or .~xxx or xxx~xxx
 
 
 # scatterplot
@@ -255,13 +259,13 @@ w + geom_point(size = 3) +
     facet_grid(Genre~ReleaseYear)
 
 w + geom_point(aes(x = BudgetRatings)) +
-    geom_smooth()+
+    geom_smooth(fill=NA)+
     facet_grid(Genre~ReleaseYear)
 
 
 # ---------------Co-ordinates
 
-#Today
+
 #limits
 #Zoom
 m <- ggplot(data = movies ,aes(x = CriticRatings ,
@@ -274,20 +278,63 @@ m + geom_point() +
     xlim(50,100) +
     ylim(50,100)
 
+# won't work well always
+
+v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")+
+    ylim(0,50)
+
+v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")+
+    ylim(0,50) +
+    xlim(0,200)
+
+
+# Actuall zoom with no error
+
+v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")+
+    coord_cartesian(ylim = c(0,50))
+
+v + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")+
+    coord_cartesian(ylim = c(0,50) , xlim = c(0,200))
+
+
+w + geom_point(aes(x = BudgetRatings)) +
+    geom_smooth()+
+    facet_grid(Genre~ReleaseYear)
+
+w + geom_point(aes(x = BudgetRatings)) +
+    geom_smooth()+
+    facet_grid(Genre~ReleaseYear)+
+    coord_cartesian(ylim = c(0,100))
+
+
+
+w + geom_point(aes(x = BudgetRatings)) +
+    geom_smooth()+
+    facet_grid(Genre~ReleaseYear)+
+    coord_cartesian(ylim = c(0,100) , xlim = c(0,200))
 
 
 
 
-# --------------------Theme
+
+# ---------------------------> Theme
 o <- ggplot(data = movies ,aes(x = BudgetRatings))
 h <- o + geom_histogram(binwidth = 10,aes(fill = Genre), colour = "Black")
 h
 
 # --------------------axis label
+
 h + xlab("Money Axis") +
     ylab("Number of Movies")
 
-# --------------------label formating
+# --------------------label formatting
+h + xlab("Money Axis") +
+    ylab("Number of Movies")+
+    theme(axis.title.x = element_text(colour = "DarkGreen", size =20),
+          axis.title.y = element_text(colour = "Red" , size =20))
+         
+
+# tick mark formatting
 h + xlab("Money Axis") +
     ylab("Number of Movies")+
     theme(axis.title.x = element_text(colour = "DarkGreen", size =20),
@@ -307,7 +354,7 @@ h + xlab("Money Axis") +
           axis.text.y = element_text(size =15),
           legend.title = element_text(size = 15),
           legend.text = element_text(size = 15),
-          legend.position = c(1,1),
+          legend.position = c(1,1),    # 0,0   0,1   1,0   1,1
           legend.justification = c(1,1))
 
 #title
@@ -323,8 +370,8 @@ h + xlab("Money Axis") +
           legend.text = element_text(size = 15),
           legend.position = c(1,1),
           legend.justification = c(1,1),
-          plot.title = element_text(size = 20 , colour = "Blue"
-                                    )) #family = "Futura"
+          plot.title = element_text(size = 20 , colour = "Blue" ,hjust = 0.5),
+          ) #,family = "Courier"
 
 str(movies)
 
